@@ -1,0 +1,1 @@
+E:\Software-University\Exercises\HighQualityCode\SOLID-Logger\Logger\bin\Debug\Logger.exe.config
