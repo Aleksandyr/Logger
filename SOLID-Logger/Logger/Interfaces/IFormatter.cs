@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Logger.Interfaces
+﻿namespace Logger.Interfaces
 {
-    interface IFormatter
+    using System;
+    using Enums;
+
+    public interface IFormatter
     {
+        string Format(DateTime date, ReportLevel level, string msg);
     }
 }

@@ -1,12 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Logger.Formatters
+﻿namespace Logger.Formatters
 {
-    class ConsoleFormatter
+    using System;
+    using Enums;
+    using Interfaces;
+
+    public class SimpleFormatter : IFormatter
     {
+        public string Format(DateTime date, ReportLevel level, string msg)
+        {
+            var output = string.Format("{0} - {1} - {2}", date, level, msg);
+
+            return output;
+        }
     }
 }

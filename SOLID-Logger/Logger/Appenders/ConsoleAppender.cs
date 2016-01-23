@@ -1,12 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Logger.Appenders
+﻿namespace Logger.Appenders
 {
-    class ConsoleAppender
+    using System;
+    using Enums;
+    using Interfaces;
+
+    public class ConsoleAppender : Appender
     {
+        public ConsoleAppender(IFormatter formatter) 
+            : base(formatter)
+        {
+        }
+
+        public override void Append(DateTime date, ReportLevel level, string msg)
+        {
+            var output = this.Formatter.Format(date, level, msg);
+
+            Console.WriteLine(output);
+        }
     }
 }

@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Logger.Interfaces
+﻿namespace Logger.Interfaces
 {
-    interface IAppender
+    using System;
+    using Enums;
+
+    public interface IAppender
     {
+        IFormatter Formatter { get; set; }
+
+        void Append(DateTime date, ReportLevel level, string msg);
     }
 }

@@ -1,2 +1,7 @@
 E:\Software-University\Exercises\HighQualityCode\SOLID-Logger\Logger\bin\Debug\Logger.exe.config
 E:\Logger\SOLID-Logger\Logger\bin\Debug\Logger.exe.config
+E:\Logger\SOLID-Logger\Logger\bin\Debug\Logger.exe
+E:\Logger\SOLID-Logger\Logger\bin\Debug\Logger.pdb
+E:\Logger\SOLID-Logger\Logger\obj\Debug\Logger.csprojResolveAssemblyReference.cache
+E:\Logger\SOLID-Logger\Logger\obj\Debug\Logger.exe
+E:\Logger\SOLID-Logger\Logger\obj\Debug\Logger.pdb
